@@ -12,7 +12,13 @@ p {
 .page {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+}
+
+@media (min-width: 992px) {
+	.page {
+		flex-direction: row;
+		height: 100vh;
+	}
 }
 
 
@@ -20,8 +26,19 @@ p {
 
 .main {
 	min-height: 50vh;
+	/* Background is fixed with regard to the viewport. */
 	background: url(images/bg.jpg) center/cover fixed;
 	display: flex;
+}
+
+
+/* Background is fixed with regard to the element itself and does not scroll with its contents. */
+
+@media (min-width: 992px) {
+	.main {
+		background-attachment: scroll;
+		width: 50%;
+	}
 }
 
 .color-overlay {
@@ -37,6 +54,8 @@ p {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 576px;
+	margin: 0 auto;
 }
 
 
@@ -79,30 +98,48 @@ p {
 
 /* Posts - right side */
 
-.posts {
-	/* Padding top and bottom */
-	padding: 2rem 2rem;
+@media (min-width: 992px) {
+	.posts {
+		overflow-y: auto;
+		width: 50%;
+	}
 }
 
-.posts .article {
+.posts-content {
+	padding: 2rem;
+}
+
+@media (min-width: 992px) {
+	.posts-content {
+		padding: 20%;
+	}
+}
+
+.posts .post {
 	margin-bottom: 2rem;
 }
 
-.posts .article a {
+@media (min-width: 992px) {
+	.posts .post {
+		margin-bottom: 20%;
+	}
+}
+
+.posts .post a {
 	cursor: pointer;
 }
 
 
 /* Removes margin bottom from the last post */
 
-.posts .article:last-child {
+.posts .post:last-child {
 	margin-bottom: 0;
 }
 
 
 /* Post date */
 
-.article span {
+.post span {
 	color: #4F5A63;
 	text-transform: uppercase;
 	font: 400 1rem/1.6 Roboto;
@@ -111,7 +148,7 @@ p {
 
 /* Post title */
 
-.article h1 {
+.post h1 {
 	color: #4F5A63;
 	font: 100 2rem/1.4 Roboto;
 }
@@ -119,7 +156,7 @@ p {
 
 /* Post intro */
 
-.article p {
+.post p {
 	font: 1rem/1.4 Open Sans;
 	color: #6B7674;
 	margin-bottom: 1rem;
@@ -128,7 +165,7 @@ p {
 
 /* "Read more" link */
 
-.article a:last-child {
+.post a:last-child {
 	color: #410093;
 	font: 600 1rem/1.2 Open Sans;
 	text-transform: uppercase;
