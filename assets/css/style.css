@@ -31,13 +31,12 @@ p {
 	display: flex;
 }
 
-
-/* Background is fixed with regard to the element itself and does not scroll with its contents. */
-
 @media (min-width: 992px) {
 	.main {
+		/* Background is fixed with regard to the element itself and does not scroll with its contents. */
 		background-attachment: scroll;
-		width: 50%;
+		/* Flex 1 evens out main content and posts */
+		flex: 1;
 	}
 }
 
@@ -101,7 +100,8 @@ p {
 @media (min-width: 992px) {
 	.posts {
 		overflow-y: auto;
-		width: 50%;
+		/* Flex 1 evens out main content and posts */
+		flex: 1;
 	}
 }
 
