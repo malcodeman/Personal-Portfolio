@@ -1,12 +1,11 @@
-body {
-	margin: 0;
-}
-
 a {
 	text-decoration: none;
 }
 
-h1 {
+body,
+h1,
+h2,
+p {
 	margin: 0;
 }
 
@@ -14,4 +13,123 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+}
+
+
+/* Main - left side */
+
+.main {
+	min-height: 50vh;
+	background: url(images/bg.jpg) center/cover fixed;
+	display: flex;
+}
+
+.color-overlay {
+	flex-grow: 1;
+	background: linear-gradient(rgba(198, 68, 252, .6), rgba(88, 86, 214, .6));
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.main-content {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* Name */
+
+.main-content h1 {
+	font: 2.4rem/1.4 Roboto;
+	color: #DCE3EF;
+	text-transform: capitalize;
+}
+
+
+/* Job */
+
+.main-content h2 {
+	font: 300 1.4rem/1.4 Roboto;
+	color: #410093;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+.main-content p {
+	font: 300 1.1rem/1.4 Open Sans;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.main-content a {
+	color: #26282a;
+	font-weight: 600;
+}
+
+
+/* Removes margin bottom from the last paragraph */
+
+.main-content p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* Posts - right side */
+
+.posts {
+	/* Padding top and bottom */
+	padding: 2rem 2rem;
+}
+
+.posts .article {
+	margin-bottom: 2rem;
+}
+
+.posts .article a {
+	cursor: pointer;
+}
+
+
+/* Removes margin bottom from the last post */
+
+.posts .article:last-child {
+	margin-bottom: 0;
+}
+
+
+/* Post date */
+
+.article span {
+	color: #4F5A63;
+	text-transform: uppercase;
+	font: 400 1rem/1.6 Roboto;
+}
+
+
+/* Post title */
+
+.article h1 {
+	color: #4F5A63;
+	font: 100 2rem/1.4 Roboto;
+}
+
+
+/* Post intro */
+
+.article p {
+	font: 1rem/1.4 Open Sans;
+	color: #6B7674;
+	margin-bottom: 1rem;
+}
+
+
+/* "Read more" link */
+
+.article a:last-child {
+	color: #410093;
+	font: 600 1rem/1.2 Open Sans;
+	text-transform: uppercase;
 }
