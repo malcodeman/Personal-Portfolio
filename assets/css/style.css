@@ -169,4 +169,9 @@ p {
 	color: #410093;
 	font: 600 1rem/1.2 Open Sans;
 	text-transform: uppercase;
+	transition: color .34s ease;
+}
+
+.post a:last-child:hover {
+	color: rgba(65, 0, 147, .6);
 }
