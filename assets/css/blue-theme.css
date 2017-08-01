@@ -1,0 +1,77 @@
+/* Blue Theme */
+
+
+/* Main - left side */
+
+.main {
+	/* Background is fixed with regard to the viewport. */
+	background: url(blue-theme/bg.jpg) center/cover fixed;
+}
+
+@media (min-width: 992px) {
+	.main {
+		/* Background is fixed with regard to the element itself and does not scroll with its contents. */
+		background-attachment: scroll;
+	}
+}
+
+.color-overlay {
+	background: linear-gradient(rgba(26, 214, 253, .6), rgba(29, 98, 240, .6));
+}
+
+
+/* Name */
+
+.main-content h1 {
+	color: #DCE3EF;
+}
+
+
+/* Job */
+
+.main-content h2 {
+	color: #1ad6fd;
+}
+
+.main-content p {
+	color: #fff;
+}
+
+.main-content a {
+	color: #26282a;
+}
+
+
+/* Posts - right side */
+
+
+/* Post date */
+
+.post span {
+	color: #4F5A63;
+}
+
+
+/* Post title */
+
+.post h1 {
+	color: #4F5A63;
+}
+
+
+/* Post intro */
+
+.post p {
+	color: #6B7674;
+}
+
+
+/* "Read more" link */
+
+.post a:last-child {
+	color: #1ad6fd;
+}
+
+.post a:last-child:hover {
+	color: rgba(26, 214, 253, .6);
+}

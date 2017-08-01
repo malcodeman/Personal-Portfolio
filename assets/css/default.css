@@ -71,7 +71,7 @@ p {
 
 .main-content h2 {
 	font: 300 1.4rem/1.4 Roboto;
-	color: #410093;
+	color: #c644fc;
 	text-transform: uppercase;
 	margin-bottom: 2rem;
 }
@@ -166,12 +166,12 @@ p {
 /* "Read more" link */
 
 .post a:last-child {
-	color: #410093;
+	color: #c644fc;
 	font: 600 1rem/1.2 Open Sans;
 	text-transform: uppercase;
 	transition: color .34s ease;
 }
 
 .post a:last-child:hover {
-	color: rgba(65, 0, 147, .6);
+	color: rgba(198, 68, 252, .6);
 }
