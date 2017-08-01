@@ -1,1 +1,16 @@
+![Homepage image](screenshots/homepage.png)
 # Personal Portfolio
+Minimal portfolio website with blog.
+
+## Assets
+
+### Background images
+* [Girl in default theme](https://unsplash.com/photos/MA7VYLQ_9ao)
+* [Girl in blue theme](https://unsplash.com/photos/_KaMTEmJnxY)
+
+### Fonts
+* [Roboto](https://fonts.google.com/specimen/Roboto)
+* [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
