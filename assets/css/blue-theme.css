@@ -20,50 +20,14 @@
 }
 
 
-/* Name */
-
-.main-content h1 {
-	color: #DCE3EF;
-}
-
-
 /* Job */
 
 .main-content h2 {
 	color: #1ad6fd;
 }
 
-.main-content p {
-	color: #fff;
-}
-
-.main-content a {
-	color: #26282a;
-}
-
 
 /* Posts - right side */
-
-
-/* Post date */
-
-.post span {
-	color: #4F5A63;
-}
-
-
-/* Post title */
-
-.post h1 {
-	color: #4F5A63;
-}
-
-
-/* Post intro */
-
-.post p {
-	color: #6B7674;
-}
 
 
 /* "Read more" link */
