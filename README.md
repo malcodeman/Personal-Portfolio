@@ -1,6 +1,7 @@
-![Homepage image](screenshots/homepage.png)
 # Personal Portfolio
 Minimal portfolio website with blog.
+
+![Homepage image](screenshots/homepage.png)
 
 ## Assets
 
