@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Personal Portfolio Theme
 Minimal portfolio website with blog.
 
 ![Homepage image](screenshots/homepage.png)
