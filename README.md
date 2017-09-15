@@ -14,4 +14,4 @@ Minimal portfolio website with blog.
 * [Open Sans](https://fonts.google.com/specimen/Open+Sans)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
