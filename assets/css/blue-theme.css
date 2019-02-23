@@ -1,41 +1,27 @@
 /* Blue Theme */
 
-
-/* Main - left side */
-
 .main {
-	/* Background is fixed with regard to the viewport. */
-	background: url(blue-theme/bg.jpg) center/cover fixed;
+  background: url(images/blue_bg.jpg) center/cover fixed;
 }
 
 @media (min-width: 992px) {
-	.main {
-		/* Background is fixed with regard to the element itself and does not scroll with its contents. */
-		background-attachment: scroll;
-	}
+  .main {
+    background-attachment: scroll;
+  }
 }
 
 .color-overlay {
-	background: linear-gradient(rgba(26, 214, 253, .6), rgba(29, 98, 240, .6));
+  background: linear-gradient(rgba(26, 214, 253, 0.6), rgba(29, 98, 240, 0.6));
 }
 
-
-/* Job */
-
-.main-content h2 {
-	color: #1ad6fd;
+.main-content .job {
+  color: #1ad6fd;
 }
 
-
-/* Posts - right side */
-
-
-/* "Read more" link */
-
-.post a:last-child {
-	color: #1ad6fd;
+.post .read-more-link {
+  color: #1ad6fd;
 }
 
-.post a:last-child:hover {
-	color: rgba(26, 214, 253, .6);
+.post .read-more-link:hover {
+  color: rgba(26, 214, 253, 0.6);
 }

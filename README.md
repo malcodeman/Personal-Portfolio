@@ -1,23 +1,22 @@
-# Personal Portfolio Theme
-Minimal portfolio website with blog.
+# Blog template 👩‍💻
 
-Inspired by vertical split screen design trend.
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/malcodeman/personal-portfolio-theme/blob/master/LICENSE)
 
-Made with [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) layout mode and [viewport-percentage lengths](https://developer.mozilla.org/en-US/docs/Web/CSS/length).
+Minimal blog template.
+
+Utilizes vertical split screen design trend.
 
 There are two themes available, default and blue.
 
-![Homepage image](screenshots/homepage.png)
+![Screenshot](docs/images/screenshot.jpg)
 
 ## Assets
 
-### Background images
-* [Girl in default theme](https://unsplash.com/photos/MA7VYLQ_9ao)
-* [Girl in blue theme](https://unsplash.com/photos/_KaMTEmJnxY)
-
-### Fonts
-* [Roboto](https://fonts.google.com/specimen/Roboto)
-* [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- [Girl in default theme](https://unsplash.com/photos/MA7VYLQ_9ao)
+- [Girl in blue theme](https://unsplash.com/photos/_KaMTEmJnxY)
+- [Roboto font](https://fonts.google.com/specimen/Roboto)
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

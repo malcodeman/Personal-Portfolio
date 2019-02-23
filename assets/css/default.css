@@ -1,177 +1,162 @@
+/* Default Theme */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 body,
 h1,
 h2,
 p {
-	margin: 0;
+  margin: 0;
 }
 
-.page {
-	display: flex;
-	flex-direction: column;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 @media (min-width: 992px) {
-	.page {
-		flex-direction: row;
-		height: 100vh;
-	}
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+  }
 }
-
-
-/* Main - left side */
 
 .main {
-	min-height: 50vh;
-	/* Background is fixed with regard to the viewport. */
-	background: url(images/bg.jpg) center/cover fixed;
-	display: flex;
+  background: url(images/default_bg.jpg) center/cover fixed;
 }
 
 @media (min-width: 992px) {
-	.main {
-		/* Background is fixed with regard to the element itself and does not scroll with its contents. */
-		background-attachment: scroll;
-		/* Flex 1 evens out main content and posts */
-		flex: 1;
-	}
+  .main {
+    background-attachment: scroll;
+  }
 }
 
 .color-overlay {
-	flex-grow: 1;
-	background: linear-gradient(rgba(198, 68, 252, .6), rgba(88, 86, 214, .6));
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+  background: linear-gradient(rgba(198, 68, 252, 0.6), rgba(88, 86, 214, 0.6));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .main-content {
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	max-width: 576px;
-	margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 576px;
+  margin: 0 auto;
 }
 
-
-/* Name */
-
-.main-content h1 {
-	font: 2.4rem/1.4 Roboto;
-	color: #DCE3EF;
-	text-transform: capitalize;
+.main-content .name {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  color: #dce3ef;
+  text-transform: capitalize;
 }
 
-
-/* Job */
-
-.main-content h2 {
-	font: 300 1.4rem/1.4 Roboto;
-	color: #c644fc;
-	text-transform: uppercase;
-	margin-bottom: 2rem;
+.main-content .job {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #c644fc;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .main-content p {
-	font: 300 1.1rem/1.4 Open Sans;
-	color: #fff;
-	margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 2rem;
+  align-self: flex-start;
 }
 
 .main-content a {
-	color: #26282a;
-	font-weight: 600;
+  color: #26282a;
+  font-weight: 600;
 }
-
-
-/* Removes margin bottom from the last paragraph */
 
 .main-content p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
-/* Posts - right side */
-
 @media (min-width: 992px) {
-	.posts {
-		overflow-y: auto;
-		/* Flex 1 evens out main content and posts */
-		flex: 1;
-	}
+  .posts {
+    overflow-y: auto;
+  }
 }
 
 .posts-content {
-	padding: 2rem;
+  padding: 2rem;
 }
 
 @media (min-width: 992px) {
-	.posts-content {
-		padding: 20%;
-	}
+  .posts-content {
+    padding: 20%;
+  }
 }
 
 .posts .post {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
-	.posts .post {
-		margin-bottom: 20%;
-	}
+  .posts .post {
+    margin-bottom: 20%;
+  }
 }
 
 .posts .post a {
-	cursor: pointer;
+  cursor: pointer;
 }
-
-
-/* Removes margin bottom from the last post */
 
 .posts .post:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-
-/* Post date */
-
-.post span {
-	color: #4F5A63;
-	text-transform: uppercase;
-	font: 400 1rem/1.6 Roboto;
+.post .date {
+  color: #4f5a63;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-
-/* Post title */
-
-.post h1 {
-	color: #4F5A63;
-	font: 100 1.8rem/1.4 Roboto;
+.post .title {
+  color: #4f5a63;
+  font-size: 1.8rem;
+  line-height: 1.4;
 }
 
-
-/* Post intro */
-
-.post p {
-	font: 1rem/1.4 Open Sans;
-	color: #6B7674;
-	margin-bottom: 1rem;
+.post .intro {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #6b7674;
+  margin-bottom: 1rem;
 }
 
-
-/* "Read more" link */
-
-.post a:last-child {
-	color: #c644fc;
-	font: 600 1rem/1.2 Open Sans;
-	text-transform: uppercase;
-	transition: color .34s ease;
+.post .read-more-link {
+  color: #c644fc;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: color 0.34s ease;
 }
 
-.post a:last-child:hover {
-	color: rgba(198, 68, 252, .6);
+.post .read-more-link:hover {
+  color: rgba(198, 68, 252, 0.6);
 }
